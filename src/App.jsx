@@ -1,15 +1,13 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import { Navbar } from "./Navbar";
 import { About } from "./About";
 import { Home } from "./Home";
-import { ApiFetch } from "./practice/ApiFetch";
 import { UseMemo } from "./practice/UseMemo";
 import { UseCallBack } from "./practice/UseCallBack";
 import { Provider } from 'react-redux'
 import { store } from "./store";
+import {CitiusTech} from "../src/interview/CitiusTech"
 
 function App() {
   const [pageType, setPageType] = useState();
@@ -33,8 +31,9 @@ const html1 = <>
   return (
     <Provider store={store}>
     {/* <ApiFetch /> */}
-    <UseMemo />
+      <UseMemo />
     <UseCallBack />
+    <CitiusTech />
 
 
 
