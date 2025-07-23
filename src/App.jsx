@@ -5,12 +5,15 @@ import "./App.css";
 import { Navbar } from "./Navbar";
 import { About } from "./About";
 import { Home } from "./Home";
+import { ApiFetch } from "./practice/ApiFetch";
+import { UseMemo } from "./practice/UseMemo";
+import { UseCallBack } from "./practice/UseCallBack";
+import { Provider } from 'react-redux'
+import { store } from "./store";
 
 function App() {
   const [pageType, setPageType] = useState();
-
-  return (
-    <>
+const html1 = <>
       <Navbar pageType={pageType} setPageType={setPageType} />
       {pageType === "home" ? (
         <Home pageType={pageType} setPageType={setPageType} />
@@ -26,8 +29,22 @@ function App() {
       <p className="position-fixed fw-bold end-0 bottom-4 m-2 rotate-text text-bold">
         sinhaanishkumar@outlook.com
       </p>
-    </>
+      </>
+  return (
+    <Provider store={store}>
+    {/* <ApiFetch /> */}
+    <UseMemo />
+    <UseCallBack />
+
+
+
+
+
+    {false&&html1}
+    </Provider>
   );
 }
 
 export default App;
+
+
