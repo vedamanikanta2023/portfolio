@@ -62,6 +62,7 @@ export default function App() {
       <section id="contact" className="py-20 px-8 text-center bg-gradient-to-r from-yellow-100 via-white to-green-100">
         <h2 className="text-3xl font-bold mb-6">Contact Me</h2>
         <div className="flex flex-col items-center gap-4">
+          
           <p className="flex items-center gap-2"><Mail /> vedamanikanta.dali@gmail.com</p>
           <p className="flex items-center gap-2"><Phone /> +91 8790785047</p>
           <div className="flex gap-6 mt-4">
